@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7c3aed" />
+  <title>ShopBoard - E-commerce Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+
+  <script>
+    window.html = htm.bind(React.createElement);
+  </script>
+
+  <script src="/src/store.js"></script>
+  <script src="/src/seed.js"></script>
+  <script src="/src/helpers.js"></script>
+  <script src="/src/common.js"></script>
+  <script src="/src/Table.js"></script>
+  <script src="/src/Charts.js"></script>
+  <script src="/src/Dashboard.js"></script>
+  <script src="/src/Products.js"></script>
+  <script src="/src/Orders.js"></script>
+  <script src="/src/Customers.js"></script>
+  <script src="/src/Inventory.js"></script>
+  <script src="/src/Payments.js"></script>
+  <script src="/src/SavedMethods.js"></script>
+  <script src="/src/Profile.js"></script>
+  <script src="/src/Settings.js"></script>
+  <script src="/src/App.js"></script>
+
+  <script>
+    const root = ReactDOM.createRoot(
+      document.getElementById("root")
+    );
+
+    root.render(html`<${App} />`);
+  </script>
+</body>
+</html>
